@@ -18,9 +18,6 @@ RUN echo "debconf shared/accepted-oracle-license-v1-1 select true" | sudo debcon
 # Install Packages
 RUN apt-get install -y oracle-java7-installer oracle-java7-set-default dsc21 datastax-agent
 
-# Start the datastax-agent
-RUN service datastax-agent start
-
 ADD service/. /etc/service/
 
 EXPOSE 7199 7000 7001 9160 9042
