@@ -5,4 +5,4 @@ echo "stomp_interface: $OPS_IP" | sudo tee -a /var/lib/datastax-agent/conf/addre
 /usr/share/datastax-agent/bin/datastax_agent_monitor >> /var/log/datastax-agent/agent.log 2>&1
 
 exec 2>&1
-exec setuidgid opscenter-agent --exec /usr/share/datastax-agent/bin/datastax-agent
+exec /usr/share/datastax-agent/bin/datastax-agent
