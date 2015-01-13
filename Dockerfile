@@ -20,6 +20,6 @@ RUN apt-get install -y oracle-java7-installer oracle-java7-set-default dsc21 dat
 
 ADD service/. /etc/service/
 
-EXPOSE 7199 7000 7001 9160 9042
+EXPOSE 7199 7000 7001 9160 9042 61621
 
 CMD /sbin/my_init

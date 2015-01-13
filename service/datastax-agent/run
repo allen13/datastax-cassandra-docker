@@ -2,7 +2,7 @@
 
 echo "stomp_interface: $OPS_IP" | sudo tee -a /var/lib/datastax-agent/conf/address.yaml
 
-/usr/share/datastax-agent/bin/datastax_agent_monitor >> /var/log/datastax-agent/agent.log 2>&1
+/usr/share/datastax-agent/bin/datastax_agent_monitor >> /var/log/cassandra/datastax-agent/agent.log 2>&1
 
 exec 2>&1
 exec /usr/share/datastax-agent/bin/datastax-agent
